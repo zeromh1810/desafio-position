@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3</title>
+    <style media="screen" type="text/css">
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main {
+        background-color: #B0CCAB;
+        padding: 50px;
+    }
+
+    .main__paragraph {
+        left: 40px;
+        position: fixed;
+    }
+
+    .banderas-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .bandera-espana {
+        max-width: 500px;
+        width: 100%;
+        height: 300px;
+        background-color: red;
+        position: relative;
+        margin: 20px;
+    }
+
+    .bandera-dinamarca {
+        max-width: 500px;
+        width: 100%;
+        height: 300px;
+        background-color: red;
+        position: relative;
+        margin: 20px;
+    }
+
+    .bandera-arabes {
+        max-width: 500px;
+        width: 100%;
+        height: 300px;
+        background-color: red;
+        z-index: -999999;
+        position: relative;
+        margin: 20px;
+    }
+
+    .bandera-japon {
+        max-width: 500px;
+        width: 100%;
+        height: 300px;
+        background-color: white;
+        position: relative;
+        margin: 20px;
+        border: 1px solid gray;
+    }
+
+	.bandera-japon__circulo {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		position: absolute;
+		top: calc(50% - 75px);
+		right: calc(50% - 75px);
+		background-color: red;
+	}
+
+    .bandera-arabes .bandera-arabes__container {
+        width: 80%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+    }
+
+    .bandera-arabes .bandera-arabes__container .bandera-arabes__green {
+        background-color: green;
+        height: 100px;
+    }
+
+    .bandera-arabes .bandera-arabes__container .bandera-arabes__white {
+        background-color: white;
+        height: 100px;
+    }
+
+    .bandera-arabes .bandera-arabes__container .bandera-arabes__black {
+        background-color: black;
+        height: 100px;
+    }
+
+
+
+    .bandera-dinamarca .bandera-dinamarca__white {
+        width: 40px;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        left: 100px;
+    }
+
+    .bandera-dinamarca .bandera-dinamarca__white--2 {
+        width: 100%;
+        height: 40px;
+        background-color: white;
+        position: absolute;
+        top: 120px;
+    }
+
+
+    .bandera-espana .bandera-espana__yellow {
+        width: 100%;
+        height: 100px;
+        background-color: yellow;
+        position: absolute;
+        top: 100px;
+    }
+    </style>
+</head>
+
+<body>
+    <section class="banderas-container">
+        <div class="bandera-espana">
+            <div class="bandera-espana__yellow"></div>
+        </div>
+        <div class="bandera-dinamarca">
+            <div class="bandera-dinamarca__white"></div>
+            <div class="bandera-dinamarca__white--2"></div>
+        </div>
+        <div class="bandera-arabes">
+            <div class="bandera-arabes__container">
+                <div class="bandera-arabes__green"></div>
+                <div class="bandera-arabes__white"></div>
+                <div class="bandera-arabes__black"></div>
+            </div>
+        </div>
+        <div class="bandera-japon">
+            <div class="bandera-japon__circulo"></div>
+        </div>
+    </section>
+</body>
+
+</html>
